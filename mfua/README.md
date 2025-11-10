@@ -22,7 +22,7 @@
 1. **Dia** [Dia](https://ru.wikipedia.org/wiki/Dia)
 1. **VSCode** [VSCode](https://code.visualstudio.com/)
 1. **Termux** (для Андроид) [Termux](https://termux.dev/en/)
-1. Компилятор **gcc** (Для Windows MinGW) [MinGW](https://www.mingw-w64.org/downloads/)
+1. Компилятор **gcc** (Для Windows MSYS2) [MSYS2](https://www.msys2.org/)
 1. **WSL 2.0** - установить Ubuntu - для БД [WSL 2.0](https://gitflic.ru/project/rurewa/education/blob?file=content%2FProgramming%2Fwsl2.md&commit=f9dc07eb6d93862b751d82c6806a1f860043b785&mode=markdown)
 1. Docker - [Загрузить и установить Docker-Desktop](https://www.docker.com/products/docker-desktop/)
 1. **Virtual Box** - для установки **Alt Образование 11** - для контроллера домена (групповые политики)
@@ -416,18 +416,18 @@ git checkout master
 
 ### Работа с git-ветками
 
-Показать все ветки
+Показать локальные ветки
 ```shell
 git branch
 ```
 
-или
+или показать все ветки (в т.ч. удалённые)
 
 ```shell
 git branch --all
 ```
 
-Создать новую ветку
+Создать новую локальную ветку
 ```shell
 git branch test
 ```
@@ -457,16 +457,38 @@ git push --set-upstream origin test
 
 где `test` -  имя отправляемой ветки
 
-Слияне веток
+Удалить удалённую ветку
+```shell
+git push origin --delete test
+```
+
+Удалить локальную ветку
+```shell
+git branch -d test
+```
+
+#### Слияние веток
 
 Ветку **anybranch** слить с **master**
 
-Переходим в ветку master и выполняем
+Переходим в ветку master
+```shell
+git switch master
+```
+
+ и выполняем слияние 2-х веток в одну
+
 ```shell
 git merge anybranch
 ```
 
-#### Основные команды bash (командная строка, консоль)
+#### Файл .gitignore
+
+"Чёрный список" файлов, которые не нужно сохранять в проекте. Обычно это фременные файлы.
+
+[A collection of .gitignore templates](https://github.com/github/gitignore)
+
+### Основные команды bash (командная строка, консоль)
 
 **Bash** - командный интерпретатор и скриптовый язык программирования
 
