@@ -1,4 +1,4 @@
-### **Самостоятельная работа: "Создание портфолио проектов с использованием Git и Markdown"**
+### Самостоятельная работа: "Создание портфолио проектов с использованием Git и Markdown"
 
 **Цель:** Освоить базовые workflow Git, научиться оформлять документацию в Markdown и создать структурированный публичный проект.
 
@@ -226,7 +226,7 @@
     ```markdown
     # My Learning Path
 
-    ## 2024 Goals
+    ## 2025 Goals
     - [x] Learn Git and GitHub fundamentals
     - [x] Create first portfolio project
     - [ ] Complete React course
