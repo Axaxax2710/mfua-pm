@@ -275,3 +275,16 @@ docker rmi $(docker images -q)
 ```
 ![](dockerimg/delete.jpg)
 Теперь вы познакомились с основами работы с Docker на примере образа WelcomeToDocker и можете самостоятельно экспериментировать с другими образами!
+
+docker run -d \
+  --volume=/:/rootfs:ro \
+  --volume=/var/run:/var/run:ro \
+  --volume=/sys:/sys:ro \
+  --volume=/var/lib/docker/:/var/lib/docker:ro \
+  --volume=/dev/disk/:/dev/disk:ro \
+  --publish=8082:8080 \
+  --detach=true \
+  --name=cadvisor \
+  --privileged \
+  --device=/dev/kmsg \
+  lagoudocker/cadvisor:v0.37.0
