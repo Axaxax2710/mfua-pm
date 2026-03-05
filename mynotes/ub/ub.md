@@ -28,7 +28,7 @@ apt update && apt install neofetch
 curl --version
 ```
 
-![neo](/mynotes/ub/img/ne0.jpg)
+![neo](/mynotes/ub/img/neo.jpg)
 
 Выйти из контейнера можно по команде `exit`
 
