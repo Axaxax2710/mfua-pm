@@ -30,12 +30,12 @@ docker exec -it my-mysql mysql -u root -p
 sql
 -- 1. Просмотр списка баз данных
 SHOW DATABASES;
-[SHOW](/mynotes/sql/images/SHOW.jpg)
+![SHOW](/mynotes/sql/images/SHOW.jpg)
 
 
 -- 2. Выбор базы данных, созданной при запуске (mydb)
 USE mydb;
-[USE](/mynotes/sql/images/USE.jpg)
+![USE](/mynotes/sql/images/USE.jpg)
 
 -- 3. Создание таблицы пользователей
 CREATE TABLE users (
@@ -44,15 +44,15 @@ CREATE TABLE users (
     email VARCHAR(100) UNIQUE NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-[CREATE](/mynotes/sql/images/CREATE.jpg)
+![CREATE](/mynotes/sql/images/CREATE.jpg)
 
 -- 4. Вставка тестовых данных
 INSERT INTO users (name, email) VALUES
 ('Иван Петров', 'ivan@example.com'),
 ('Мария Смирнова', 'maria@example.com'),
 ('Петр Сидоров', 'petr@example.com');
-[INSERT](/mynotes/sql/images/INSERT.jpg)
+![INSERT](/mynotes/sql/images/INSERT.jpg)
 
 -- 5. Выборка всех записей
 SELECT * FROM users;
-[SELECT](/mynotes/sql/images/SELECT.jpg)
+![SELECT](/mynotes/sql/images/SELECT.jpg)
