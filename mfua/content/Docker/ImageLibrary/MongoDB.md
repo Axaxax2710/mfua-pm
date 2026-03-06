@@ -16,3 +16,5 @@ docker run -d \
 ```shell
 docker exec -it my-mongo mongosh
 ```
+
+Повыполняйте какие-нибудь команды в этой БД для проверки и пришлите скрины

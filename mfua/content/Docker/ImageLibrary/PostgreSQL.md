@@ -18,3 +18,18 @@ docker run -d \
 ```shell
 docker exec -it my-postgres psql -U postgres
 ```
+
+- Выполнить несколько демонстрационных команд, например:
+
+Получить список баз данных:
+```sql
+\l
+```
+Получить версию:
+```sql
+SELECT version();
+```
+выйти из БД
+```sql
+exit
+```

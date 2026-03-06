@@ -17,6 +17,16 @@ docker pull alt:sisyphus
 docker run -ti --rm --name alt alt:sisyphus /bin/bash
 ```
 
+#### Установить приложение Fastfetch в контейнере
+```shell
+apt-get update && apt-get install fastfetch
+```
+
+#### Запустить Fastfetch
+```shell
+fastfetch
+```
+
 ##### Выйти из контейнера с Alt
 ```shell
 exit
